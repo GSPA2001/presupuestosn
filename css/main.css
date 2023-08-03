@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    background-color: #f4f0ff;
+}
+/* estilo de imagen header*/
+header .imghead {
+    display: flex; /* Asegura que el contenedor de la imagen sea un contenedor flexible */
+    justify-content: center;
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen para evitar que ocupe más que el ancho de la página */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el ancho máximo */
+}
+
+header .imghead img {
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor flexible */
+    height: auto; /* Permite que la altura de la imagen se ajuste automáticamente según el ancho para mantener la proporción */
+}
+/* estilos del main de texto*/
+main {
+    text-align: center; /* Centra el contenido del elemento <main> */
+}
+
+main h1 {
+    margin-top: 5px; /* Agrega un margen superior para separar el encabezado de la imagen del header */
+}
+
+main h1 a {
+    color: rgba(255, 51, 0, 0.509);
+    text-decoration: none;
+}
+/*estilos de la carta*/
+/* Estilos para el grupo de productos entrada*/
+.product-group {
+    margin-bottom: 10px;
+}
+.group-entradas {
+    cursor: pointer;
+    background-color: #d9ebcf;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* Estilos para la lista de productos */
+.product-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+}.product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}.product-info {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+/* Estilos para los botones de aumentar y disminuir cantidad */
+.quantity-input {
+    display: flex;
+    align-items: center;
+    margin: 0 15px; /* Espacio entre la bebida7comida y el boton */
+    
+}
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: #fff;
+    color: rgba(255, 4, 4, 0.888);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px #00000030;
+}
+.quantity-value {
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 10px; /* Espacio entre el botón y el número */
+}.quantity-btn:hover {
+    background-color: #e7e7e7;
+}
+.quantity {
+    width: 50px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Eliminamos el padding para que el número se vea dentro del cuadro */
+}
+.quantity:focus {
+    outline: none;
+}
+/* Estilos para los botones de calcular y limpiar presupuesto */
+button#btn-calcular-presupuesto,
+button#btn-limpiar-presupuesto {
+  margin: 5px;
+  padding: 8px 15px;
+  background-color: #7781d8;
+  color: #f4f0ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}button#btn-calcular-presupuesto:hover,
+button#btn-limpiar-presupuesto:hover {
+  background-color: #5e68c5;
+}
+ 
+/* Estilos para el grupo de productos principales*/
+.group-principales{
+    cursor: pointer;
+    background-color: #d9ebcf;
+    padding: 10px;
+    border-radius: 10px;
+}
+/*estilos para el grupo de productos extras*/
+.group-extras{
+    cursor:pointer;
+    background-color: #d9ebcf;
+    padding: 10px;
+    border-radius: 10px;
+}
+/*estilos para el grupo bebidas*/
+.group-bebidas{
+    cursor:pointer;
+    background-color: #d9ebcf;
+    padding: 10px;
+    border-radius: 10px;
+}ul span{
+    padding: 0px;
+}
+
+/*estilo del footer*/
+footer {
+    background: #7781d8;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0px;
+    color: rgb(244, 190, 237);
+    text-align: center;
+}
+/*Media querys*/
+
+/*MQ celular*/
+@media only screen and (max-width: 414px) {
+    .imghead {
+        width: 100%;
+        overflow: hidden;
+    }.imghead img{
+        width: 100%;
+        height: auto;
+    }
+    main h1 a{
+        text-align: center;
+        margin-top: 5px;
+        text-decoration: none;
+    }
+    .product-info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .quantity-input {
+        margin-top: 10px;
+    }
+
+    .quantity-btn,
+    .quantity-value {
+        font-size: 14px;
+    }
+
+    #resultado-presupuesto {
+        font-size: 16px;
+    }
+
+    #btn-calcular-presupuesto,
+    #btn-limpiar-presupuesto {
+        font-size: 14px;
+    }
+    #btn-calcular-presupuesto,
+    #btn-limpiar-presupuesto {
+        margin-bottom: 25px;
+    }
+}
+
+/*MQ tablet*/
+@media only screen and (min-width:570px) and (max-width: 790px) {
+    header .imghead {
+        display: flex; /* Asegura que el contenedor de la imagen sea un contenedor flexible */
+        justify-content: center;
+        align-items: center; /* Centra verticalmente el contenido dentro del contenedor */
+        height: 150px; /* Ajusta la altura del contenedor de la imagen según tus preferencias */
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen para evitar que ocupe más que el ancho de la página */
+        overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el ancho máximo */
+    }
+    
+    header .imghead img {
+        max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor flexible */
+        height: auto; /* Permite que la altura de la imagen se ajuste automáticamente según el ancho para mantener la proporción */
+    }
+}

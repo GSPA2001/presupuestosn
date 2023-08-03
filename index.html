@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mi link css -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Presupuestos</title>
+</head>
+<body>
+    <!-- banner -->
+    <header>
+        <!-- imagen para el header -->
+        <div class="imghead">
+            <img src="img/large.jpeg" alt="header">
+        </div>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <div>
+            <h1>
+                <a href="index.html"> Hola Lei 👋🏼 - Presupuestos de mesas</a>
+            </h1>
+        </div>
+        <div class="product-group">
+            <div class="group-entradas" onclick="toggleProductList('entradas')">Entradas🫔</div>
+            <ul class="product-list entradas">
+                <li>
+                    <div class="product-info">
+                        <span> Tamales 👉🏻 $800</span>
+                        <div class="quantity-input">
+                            <button class="quantity-btn minus-btn">-</button>
+                            <span class="quantity-value">0</span>
+                            <button class="quantity-btn plus-btn">+</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-info">
+                        <span> Ceviche 👉🏻 $3400</span>
+                        <div class="quantity-input">
+                            <button class="quantity-btn minus-btn">-</button>
+                            <span class="quantity-value">0</span>
+                            <button class="quantity-btn plus-btn">+</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-info">
+                        <span> Ceviche Mixto 👉🏻 $4200</span>
+                        <div class="quantity-input">
+                            <button class="quantity-btn minus-btn">-</button>
+                            <span class="quantity-value">0</span>
+                            <button class="quantity-btn plus-btn">+</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="product-group">
+            <div class="group-principales" onclick="toggleProductList('principales')">Platos Principales🍽️</div>
+            <ul class="product-list principales">
+              <li>
+                <div class="product-info">
+                  <span> Jalea de Mariscos 👉🏻 $4500</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-info">
+                  <span> Arroz con Mariscos 👉🏻 $4300</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-info">
+                  <span> Rabas 👉🏻 $4000</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-info">
+                  <span> Arroz Chaufa con rabas de calamarar 👉🏻 $3600</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-info">
+                  <span> Cabrito 👉🏻 $2800</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-info">
+                  <span> Lomito 👉🏻 $2700</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-info">
+                  <span> Chaufa 👉🏻 $2400</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-info">
+                  <span> Chaufa Veggie 👉🏻 $1700</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-info">
+                  <span> Pollo frito 👉🏻 $1400</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-info">
+                  <span>Plato del día 👉🏻 $1300</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+        <div class="product-group">
+            <div class="group-extras" onclick="toggleProductList('extras')">Extras🍚</div>
+            <ul class="product-list extras">
+              <li>
+                <div class="product-info">
+                  <span>Ensalada Mixta 👉🏻 $700</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-info">
+                  <span>Ensalada Simple 👉🏻 $700</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-info">
+                  <span>Porción de Arroz 👉🏻 $600</span>
+                  <div class="quantity-input">
+                    <button class="quantity-btn minus-btn">-</button>
+                    <span class="quantity-value">0</span>
+                    <button class="quantity-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+        <div class="product-group">
+            <div class="group-bebidas" onclick="toggleProductList('bebidas')">Bebidas🫗</div>
+            <ul class="product-list bebidas">
+                <li class="group-bebidas" onclick="toggleProductList('cocacola')">
+                    <div class="product-info">
+                        <span>Coca-Cola</span>
+                        <div class="quantity-input">
+                            <ul class="product-list cocacola">
+                                <li>
+                                    <div class="product-info">
+                                        <span>Grande Plast 👉🏻 $700</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-info">
+                                        <span>Grande Vidrio 👉🏻 $600</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-info">
+                                        <span>Peque Plast 👉🏻 $350</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="group-bebidas" onclick="toggleProductList('aguasaborizada')">
+                    <div class="product-info">
+                        <span>Agua Saborizada</span>
+                        <div class="quantity-input">
+                            <ul class="product-list aguasaborizada">
+                                <li>
+                                    <div class="product-info">
+                                        <span>Grande Plast 👉🏻 $700</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-info">
+                                        <span>Peque Plast 👉🏻 $350</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="group-bebidas" onclick="toggleProductList('agua')">
+                    <div class="product-info">
+                        <span>Agua</span>
+                        <div class="quantity-input">
+                            <ul class="product-list agua">
+                                <li>
+                                    <div class="product-info">
+                                        <span>Grande Plast 👉🏻 $500</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-info">
+                                        <span>Peque Plast 👉🏻 $300</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="group-bebidas" onclick="toggleProductList('aguagasificada')">
+                    <div class="product-info">
+                        <span>Agua Gasifificada</span>
+                        <div class="quantity-input">
+                            <ul class="product-list aguagasificada">
+                                <li>
+                                    <div class="product-info">
+                                        <span>Grande Plast 👉🏻 $550</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-info">
+                                        <span>Sifon 👉🏻 $350</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-info">
+                                        <span>Peque Plast 👉🏻 $300</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="group-bebidas" onclick="toggleProductList('alcoholicas')">
+                    <div class="product-info">
+                        <span>Bebida Alcohólica</span>
+                        <div class="quantity-input">
+                            <ul class="product-list alcoholicas">
+                                <li>
+                                    <div class="product-info">
+                                        <span>Vino 👉🏻 $1200</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-info">
+                                        <span>Cerverza Vidrio 👉🏻 $900</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-info">
+                                        <span>Lata de Cerveza 👉🏻 $500</span>
+                                        <div class="quantity-input">
+                                            <button class="quantity-btn minus-btn">-</button>
+                                            <span class="quantity-value">0</span>
+                                            <button class="quantity-btn plus-btn">+</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>               
+        <div>
+            <button id="btn-calcular-presupuesto">Calcular Presupuesto</button>
+            <p>El presupuesto total es: <span id="resultado-presupuesto">$0.00</span></p>
+            <button id="btn-limpiar-presupuesto">Limpiar Presupuesto</button>
+        </div>
+    </main>
+    <!-- pie de pagina-->
+    <footer>
+        <h4> Nos vemos Lei 😎</h4>
+    </footer>
+    <!-- Mi Link de javascript-->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
